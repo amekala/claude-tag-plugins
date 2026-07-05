@@ -46,6 +46,11 @@ https://adspirer.ai/keys.)
 export ADSPIRER_API_KEY="placeholder"   # injected by the runtime; any value works
 ```
 
+The API is served at `https://api.adspirer.ai` (canonical) and also at
+`https://mcp.adspirer.com` — identical surface on both hosts. Workspace admins should
+allow-list whichever host is used here on the credential; the bundled script accepts
+`ADSPIRER_BASE_URL` to switch hosts without editing recipes.
+
 **Sanity check** — confirm the workspace is wired up (free, no quota consumed):
 
 ```bash
